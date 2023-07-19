@@ -9,7 +9,7 @@ const BookEdit = ({ book, onSave }) => {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    editBookById(book.id, title);
+    editBookById(book._id, title);
     onSave();
   };
   return (

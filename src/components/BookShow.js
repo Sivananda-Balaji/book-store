@@ -6,7 +6,7 @@ const BookShow = ({ book }) => {
   const [showEdit, setShowEdit] = useState(false);
   const { deleteBookById } = useContext(booksContext);
   const handleDelete = () => {
-    deleteBookById(book.id);
+    deleteBookById(book._id);
   };
   const handleEdit = () => {
     setShowEdit(!showEdit);
@@ -21,7 +21,7 @@ const BookShow = ({ book }) => {
   }
   return (
     <div className="book-show">
-      <img src={`https://picsum.photos/seed/${book.id}/300/200`} alt="book" />
+      <img src={`https://picsum.photos/seed/${book._id}/300/200`} alt="book" />
       <div>{content}</div>
       <div className="actions">
         <button className="edit" onClick={handleEdit}>

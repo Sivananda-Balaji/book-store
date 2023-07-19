@@ -7,29 +7,32 @@ const Provider = ({ children }) => {
   const [books, setBooks] = useState([]);
 
   const getBooks = useCallback(async () => {
-    const results = await axios.get("http://localhost:3001/books");
+    const results = await axios.get("http://localhost:8000/api/v1/books");
     setBooks(results.data);
   }, []);
   const editBookById = async (id, newTitle) => {
-    const updatedBook = await axios.put(`http://localhost:3001/books/${id}`, {
-      title: newTitle,
-    });
+    const updatedBook = await axios.put(
+      `http://localhost:8000/api/v1/books/${id}`,
+      {
+        title: newTitle,
+      }
+    );
     const updatedBooks = books.map((book) => {
-      return book.id === id ? { ...book, ...updatedBook.data } : book;
+      return book._id === id ? { ...book, ...updatedBook.data } : book;
     });
     setBooks(updatedBooks);
   };
 
   const deleteBookById = async (id) => {
-    await axios.delete(`http://localhost:3001/books/${id}`);
+    await axios.delete(`http://localhost:8000/api/v1/books/${id}`);
     const filteredBooks = books.filter((book) => {
-      return book.id !== id;
+      return book._id !== id;
     });
     setBooks(filteredBooks);
   };
 
   const createBook = async (title) => {
-    const newBook = await axios.post("http://localhost:3001/books", {
+    const newBook = await axios.post("http://localhost:8000/api/v1/books", {
       title,
     });
     const updatedBooks = [...books, newBook.data];
