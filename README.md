@@ -14,6 +14,32 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+### `npm run server`
+
+Initiate the backend server to launch your application's server-side functionality.
+
+### Homepage
+![Book-Store-Home](https://github.com/Sivananda-Balaji/book-store/assets/121665946/8c0ec658-437e-4aea-a428-4e63d4026f80)
+
+![DB_Home](https://github.com/Sivananda-Balaji/book-store/assets/121665946/3ac09d37-3a47-48dd-8a00-17f21911d570)
+
+### Add Books
+![Book-Store-Add_Book](https://github.com/Sivananda-Balaji/book-store/assets/121665946/cf81091e-1725-4526-962f-f427d771a7d9)
+
+![DB_Add_Book](https://github.com/Sivananda-Balaji/book-store/assets/121665946/a6d282ab-cece-41a0-883a-83f83739afd4)
+
+### Edit Books
+![Book-Store-Edit_Book](https://github.com/Sivananda-Balaji/book-store/assets/121665946/9be26195-7aef-4522-b99e-ebe0e7d27f00)
+
+![Book-Store-Edit_Book_1](https://github.com/Sivananda-Balaji/book-store/assets/121665946/f41a4d3f-fdbd-4976-8cf1-3c4e3ee3b9b9)
+
+![DB_Edit_Book](https://github.com/Sivananda-Balaji/book-store/assets/121665946/e804987c-71fd-461e-b3ec-bd3591211e5f)
+
+### Delete Books
+![Book-Store-Delete_Book](https://github.com/Sivananda-Balaji/book-store/assets/121665946/8d956c82-5686-4483-b738-f26f17a5885c)
+
+![DB_Delete_Book](https://github.com/Sivananda-Balaji/book-store/assets/121665946/ae4009b6-e2fd-4bfa-83c9-9d75f94cfce9)
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
